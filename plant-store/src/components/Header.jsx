@@ -16,7 +16,7 @@ function Header({ headerBG, bag }) {
                         <li className="text-md mr-12 md:block hidden hover:scale-110 duration-200"><a href="/">ABOUT</a></li>
                         <li className="text-md mr-12 md:block hidden hover:scale-110 duration-200"><a href="/">COLLECTION</a></li>
                         <li className="text-md mr-12 md:block hidden hover:scale-110 duration-200"><a href="/">GALLERY</a></li>
-                        <li><a href="/"><img src={bag} alt="bag" className="w-11 invert opacity-90 hover:scale-110 duration-200"/></a></li>
+                        <li><a href="/"><img src={bag} alt="bag" className="w-11 invert hover:scale-110 duration-200"/></a></li>
                     </ul>
                 </div>
         </div>
