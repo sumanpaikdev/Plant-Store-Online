@@ -1,6 +1,5 @@
-import './App.css';
 import React from "react"
-import AllYouNeed from './components/AllYouNeed';
+import './App.css';
 
 // images
 import bag from "./images/bag.png"
@@ -14,17 +13,20 @@ import theshop from "./images/the-shop.jpg"
 
 //components
 import Header from "./components/Header"
-import Bestseller from './components/Bestseller';
+import BestPlant from './components/BestPlant';
+import AllYouNeed from './components/AllYouNeed';
+import OurCollection from "./components/OurCollection";
+import TheShop from './components/TheShop';
 import NewArrivals from './components/NewArrivals';
 import Footer from './components/Footer';
-import TheShop from './components/TheShop';
 
 function App() {
   return (
     <div className="App">
       <Header bag={bag} headerBG={headerBG}/>
-      <Bestseller/>
-      <AllYouNeed/>
+      <BestPlant/>
+      <AllYouNeed />
+      <OurCollection/>
       <TheShop theshop={theshop}/>
       <NewArrivals pic={arrival}/>
       <Footer github={github} twitter={twitter} gmail={gmail} portfolio={portfolio}/>

@@ -22,10 +22,10 @@ function Footer({ github, twitter, gmail, portfolio }) {
             <div>
                 <p className="text-xs mb-2">Follow us</p>
                 <div className="flex">
-                    <a href="/" className="mr-4"> <img src={github} alt="github" className="invert w-8 hover:scale-110 duration-200 shadow-md"/></a>
-                    <a href="/" className="mr-4"> <img src={twitter} alt="twitter" className="invert w-8 hover:scale-110 duration-200 shadow-md"/></a>
-                    <a href="/" className="mr-4"> <img src={gmail} alt="gmail" className="invert w-8 hover:scale-110 duration-200 shadow-md"/></a>
-                    <a href="/" className="mr-4"> <img src={portfolio} alt="portweb" className="invert w-8 hover:scale-110 duration-200 shadow-md"/></a>
+                    <a href="/" className="mr-4"> <img src={github} alt="github" className="invert w-8 hover:scale-110 duration-200"/></a>
+                    <a href="/" className="mr-4"> <img src={twitter} alt="twitter" className="invert w-8 hover:scale-110 duration-200"/></a>
+                    <a href="/" className="mr-4"> <img src={gmail} alt="gmail" className="invert w-8 hover:scale-110 duration-200"/></a>
+                    <a href="/" className="mr-4"> <img src={portfolio} alt="portweb" className="invert w-8 hover:scale-110 duration-200"/></a>
                 </div>
             </div>
         </div>

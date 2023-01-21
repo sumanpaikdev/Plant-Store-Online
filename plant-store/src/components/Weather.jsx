@@ -6,7 +6,7 @@ import calendar from "../images/calendar.png"
 
 function Weather({tem, day}) {
     return(
-        <div className="flex justify-center items-center sm:scale-100 scale-75 w-[315px]">
+        <div className="flex justify-center items-center sm:scale-100 scale-75 w-[315px] mb-6">
             <div className=" w-24 h-24 flex flex-col justify-center items-center border-l-2 border-gray-100 p-3">
                 <img src={humi} alt="humidity" className="w-10 opacity-50 mb-2"/>
                 <p className="text-sm">Humidity</p>
