@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "./Button"
-import Weather from "./Weather"
+import Weather from "../Weather"
 
 function BestsellerCon({pic, title, desc, tem, day}) {
     return(

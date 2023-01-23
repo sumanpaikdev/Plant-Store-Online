@@ -1,5 +1,5 @@
 import React from "react"
-import AllNeed from "./AllNeed"
+import AllNeed from "./subcomponent/AllNeed"
 
 import allone from "../images/all1.jpg"
 import alltwo from "../images/all2.jpg"
@@ -10,8 +10,8 @@ import allfour from "../images/all4.jpg"
 function AllYouNeed() {
   return (
     <div className="bg-gray-100 pt-10">
-        <p className="text-3xl font-philo text-center mt-4 mb-12">ALL YOU NEED</p>
-        <div className="flex flex-wrap justify-center items-center">
+        <p className="text-3xl font-philo text-center mt-4 mb-6">ALL YOU NEED</p>
+        <div className="flex overflow-x-auto sm:justify-center no-scrollbar snap-x pt-6">
             <AllNeed 
             count={"I"} 
             allimage={allone} 

@@ -4,12 +4,12 @@ import bestone from "../images/best1.jpg";
 import besttwo from "../images/best2.jpg";
 import bestthree from "../images/best3.jpg";
 
-import ButtonMore from "./ButtonMore";
-import BestsellerCon from "./BestsellerCon";
+import ButtonMore from "./subcomponent/ButtonMore";
+import BestsellerCon from "./subcomponent/BestsellerCon";
 
 function BestPlant() {
   return (
-    <div className="bg-stone-200 sm:bg-white flex flex-col items-center overflow-hidden">
+    <div className="bg-stone-200 sm:bg-white flex flex-col items-center overflow-hidden" id="bestseller">
         <p className="font-philo text-3xl my-12">BESTSELLERS</p>
       <BestsellerCon
         pic={bestone}

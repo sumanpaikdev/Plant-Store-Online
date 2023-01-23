@@ -2,7 +2,7 @@ import React from "react";
 
 function AllNeed({ count, allimage, title, desc}) {
     return(
-        <div className="w-[310px] h-[480px] shadow-md bg-white sm:mx-2 relative mb-4 sm:hover:-translate-y-6 duration-500">
+        <div className="w-[310px] h-[480px] shadow-md bg-white sm:mx-2 relative mx-2 mb-4 sm:hover:-translate-y-6 duration-500 flex-none snap-center">
           <div>
             <img src={allimage} alt="all need one" className="w-[310px] h-[310px]"/>
             <div className="absolute top-72 left-[38%] p-4 w-16 h-16 rounded-full backdrop-blur-lg shadow-md flex items-center justify-center bg-lime-200">
