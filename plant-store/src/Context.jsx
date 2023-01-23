@@ -4,6 +4,7 @@ const Context = React.createContext();
 
 function ContextProvider(props) {
   const [allPhotos, setAllPhotos] = useState([]);
+  const [cartPlant, setCartPlant] = useState([]);
   const [querySearch, setQuerySearch] = useState("Philodendron");
 
   // const allPhotoUrl = "https://api.unsplash.com/search/photos?page=5&per_page=30&query=plants on pot&client_id=ci4Doh8HrzAal6IFAg4bDbRODKv9MNeb8rOQwLt66rE"
@@ -30,10 +31,15 @@ function ContextProvider(props) {
       setExploreStatus(true);
     }
   }
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [exploreStatus])
 
-
+  function addToCart(newPlant) {
+    setCartPlant(prev => [...prev, newPlant])
+  }
   return (
-    <Context.Provider value={{ allPhotos, querySearch, searchItem, exploreStatus, exploreStatusToggle }}>
+    <Context.Provider value={{ allPhotos, querySearch, searchItem, exploreStatus, exploreStatusToggle, cartPlant, addToCart }}>
       {props.children}
     </Context.Provider>
   );

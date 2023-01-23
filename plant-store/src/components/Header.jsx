@@ -13,11 +13,11 @@ function Header({ headerBG, bag }) {
         </div>
         <div className="absolute top-0 text-gray-100 flex items-center justify-between w-full sm:py-12 py-6 sm:px-24 px-8">
                 <div className="text-3xl">
-                    <p className="font-philo">FLEUR</p>
+                    <a className="font-philo" href="/">FLEUR</a>
                 </div>
                 <div>
                     <ul className="flex items-center">
-                        <li className="text-md mr-12 md:block hidden hover:scale-110 duration-200"><AnchorLink href="/">ABOUT</AnchorLink></li>
+                        {/* <li className="text-md mr-12 md:block hidden hover:scale-110 duration-200"><AnchorLink href="/">ABOUT</AnchorLink></li> */}
                         <li className="text-md mr-12 md:block hidden hover:scale-110 duration-200"><AnchorLink href="#bestseller">BESTSELLER</AnchorLink></li>
                         <li className="text-md mr-12 md:block hidden hover:scale-110 duration-200"><AnchorLink href="#collection">COLLECTION</AnchorLink></li>
                         <li className="text-md mr-12 md:block hidden hover:scale-110 duration-200"><AnchorLink href="/">GALLERY</AnchorLink></li>
@@ -31,7 +31,7 @@ function Header({ headerBG, bag }) {
                     <p className="text-gray-100 sm:w-80 w-60 sm:text-lg text-xs mt-8">Choose your special plant of delicate freshness to complement your interior.</p>
                     <div className="flex sm:flex-row flex-col justify-start mt-10">
                         <button onClick={exploreStatusToggle} className="px-7 sm:mr-8 sm:mb-0 mb-6 py-3 text-sm font-semibold bg-green-600 rounded hover:bg-green-500 shadow-lg">Explore Shop</button>
-                        <button className="px-7 py-3 text-sm font-semibold border-2 border-gray-200 rounded backdrop-blur-md shadow-lg">LEARN MORE</button>
+                        {/* <a href="javascript:void(0)" className="px-7 py-3 text-sm font-semibold border-2 border-gray-200 rounded backdrop-blur-md shadow-lg">LEARN MORE</a> */}
                     </div>
                 </div>
             </div>

@@ -20,7 +20,7 @@ function OurCollection() {
         <Collection name={"Green plants"}/>
         <Collection name={"Ficus lyrata"} />
         <Collection name={"Philodendron"} />
-        <Collection name={"Philodendrons"} />
+        <Collection name={"Hanging Plant"} />
         <Collection name={"Monstera"} />
         <Collection name={"Succulents "} />
         <Collection name={"Fern"} />

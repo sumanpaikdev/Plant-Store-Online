@@ -1,6 +1,7 @@
 import React, {useContext} from "react"
 import './App.css';
 import { Context } from "./Context";
+
 import Explore from "./components/Explore";
 
 // images
@@ -24,6 +25,7 @@ function App() {
 
   const {exploreStatus} = useContext(Context)
 
+
     return (
       <div className="App">
         { exploreStatus && <Header bag={bag} headerBG={headerBG}/>}
@@ -32,7 +34,7 @@ function App() {
         { exploreStatus && <OurCollection/>}
         { exploreStatus && <NewArrivals pic={arrival}/>}
         { exploreStatus && <Footer github={github} twitter={twitter} gmail={gmail} portfolio={portfolio}/>}
-        { exploreStatus === false && <Explore/>}
+        { exploreStatus === false && <Explore cartlogo={bag}/>}
       </div>
     );
 

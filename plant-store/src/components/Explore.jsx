@@ -1,37 +1,30 @@
-import React, {useContext} from 'react'
-import Collection from "./subcomponent/CollectionBTN"
-import CollectionItem from './subcomponent/CollectionItem'
-import ButtonMore from './subcomponent/ButtonMore'
+import React from "react";
+import ShopContainer from "./ShopContainer";
+import CartPage from "./CartPage";
 
-import {Context} from '../Context'
-
-function OurCollection() {
-
-  const {allPhotos} = useContext(Context)
-
-  const imageElement = allPhotos.map(items => (
-    <CollectionItem items={items} key={items.id}/>
-  ))
- 
+function Explore({ cartlogo }) {
+  const [ cartstat, setCartstat] = React.useState(true)
+  function toggleState() {
+    if(cartstat){
+      setCartstat(false)
+    }else{
+      setCartstat(true)
+    }
+  }
   return (
-    <div className='py-6 sm:pl-0 pl-2 bg-gray-100'>
-      <p className='font-philo text-3xl text-center mb-6'>Explore Shop</p>
-      <div className=' flex overflow-x-auto sm:justify-center no-scrollbar'>
-        <Collection name={"Green plants"}/>
-        <Collection name={"Ficus lyrata"} />
-        <Collection name={"Philodendron"} />
-        <Collection name={"Philodendrons"} />
-        <Collection name={"Monstera"} />
-        <Collection name={"Succulents "} />
-        <Collection name={"Fern"} />
+    <div>
+      <div className="flex justify-between items-center pl-7 pr-10 py-3 fixed w-[100%] top-0 z-10 bg-white shadow-md">
+        <p to="/shopcontainer" className="font-philo text-2xl">Shop Plants</p>
+        
+        <button onClick={toggleState} className="flex justify-center items-center shadow-sm text-lg font-philo text-white hover:bg-green-600 bg-green-700 rounded-md pl-3 pr-5 py-2">
+          {cartstat ? "Cart" : "Back to shop"}
+          </button>
+        {cartstat && <p className="text-white backdrop-blur-xl rounded-full px-[7px] py-[3px] font-semibold absolute right-5 top-2 shadow bg-rose-500">33</p>}
       </div>
-      <div className='pt-8 flex flex-wrap items-center justify-center'>
-        {imageElement}
-      </div>
-      <div className='pt-6 flex flex-col items-center'>
-        <ButtonMore name={"Back to home"}/>
-      </div>
+      {cartstat && <ShopContainer/> }
+      {cartstat === false && <CartPage/> }
+      
     </div>
-  )
+  );
 }
-export default OurCollection
+export default Explore;
