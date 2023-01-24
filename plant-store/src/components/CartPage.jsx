@@ -9,8 +9,9 @@ export default function CartPage() {
             <InCartItem items={items}/>
         )
     })
+
   return (
-    <div className='pt-27'>
+    <div className='pt-[100px]'>
         <div className='flex flex-wrap justify-center items-center'>
            {yourPlant}
         </div>

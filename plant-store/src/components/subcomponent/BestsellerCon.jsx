@@ -1,5 +1,4 @@
 import React from "react";
-import Button from "./Button"
 import Weather from "../Weather"
 
 function BestsellerCon({pic, title, desc, tem, day}) {
@@ -11,7 +10,6 @@ function BestsellerCon({pic, title, desc, tem, day}) {
                     <p className="uppercase font-philo text-2xl mb-4 mt-6">{title}</p>
                     <p className="w-[210px] text-center mb-10 text-xs text-gray-500">{desc}</p>
                     <Weather tem={tem} day={day}/>
-                    <Button name={"ADD TO CART"}/>
                 </div>
             </div>
             

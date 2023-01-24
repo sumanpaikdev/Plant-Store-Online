@@ -38,8 +38,23 @@ function ContextProvider(props) {
   function addToCart(newPlant) {
     setCartPlant(prev => [...prev, newPlant])
   }
+  function removeFromCart(id) {
+    setCartPlant(prev => prev.filter(item => item.id !== id))
+  }
+  console.log(cartPlant)
+
   return (
-    <Context.Provider value={{ allPhotos, querySearch, searchItem, exploreStatus, exploreStatusToggle, cartPlant, addToCart }}>
+    <Context.Provider value={{ 
+        allPhotos, 
+        querySearch, 
+        searchItem, 
+        exploreStatus, 
+        exploreStatusToggle, 
+        cartPlant, 
+        addToCart, 
+        removeFromCart
+      }}>
+
       {props.children}
     </Context.Provider>
   );

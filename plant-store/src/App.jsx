@@ -34,7 +34,7 @@ function App() {
         { exploreStatus && <OurCollection/>}
         { exploreStatus && <NewArrivals pic={arrival}/>}
         { exploreStatus && <Footer github={github} twitter={twitter} gmail={gmail} portfolio={portfolio}/>}
-        { exploreStatus === false && <Explore cartlogo={bag}/>}
+        { exploreStatus === false && <Explore/>}
       </div>
     );
 

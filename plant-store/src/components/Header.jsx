@@ -20,12 +20,11 @@ function Header({ headerBG, bag }) {
                         {/* <li className="text-md mr-12 md:block hidden hover:scale-110 duration-200"><AnchorLink href="/">ABOUT</AnchorLink></li> */}
                         <li className="text-md mr-12 md:block hidden hover:scale-110 duration-200"><AnchorLink href="#bestseller">BESTSELLER</AnchorLink></li>
                         <li className="text-md mr-12 md:block hidden hover:scale-110 duration-200"><AnchorLink href="#collection">COLLECTION</AnchorLink></li>
-                        <li className="text-md mr-12 md:block hidden hover:scale-110 duration-200"><AnchorLink href="/">GALLERY</AnchorLink></li>
-                        <li><a href="/"><img src={bag} alt="bag" className="w-11 invert hover:scale-110 duration-200"/></a></li>
+                        <li><button onClick={exploreStatusToggle}><img src={bag} alt="bag" className="w-11 invert hover:scale-110 duration-200"/></button></li>
                     </ul>
                 </div>
         </div>
-            <div className="absolute sm:40 top-40 sm:w-[700px] w-[280px] flex sm:items-center items-start sm:pt-32 sm:px-24 px-8">
+            <div className="absolute sm:40 top-40 sm:w-[700px] w-[280px] flex sm:items-center items-start sm:pt-32 sm:px-24 px-8 pt-20">
                 <div className="text-gray-100 inline-block ml-3 sm:ml-0">
                     <p className="font-philo sm:text-7xl text-4xl sm:pt-0 pt-4">PLANT COLLECTION</p>
                     <p className="text-gray-100 sm:w-80 w-60 sm:text-lg text-xs mt-8">Choose your special plant of delicate freshness to complement your interior.</p>
